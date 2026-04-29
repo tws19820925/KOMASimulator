@@ -36,3 +36,4 @@ powershell -ExecutionPolicy Bypass -File ./tools/Validate-StaticSite.ps1
 - Google Playなどに登録する正式URL: https://tws19820925.github.io/KOMASimulator/privacy_policy.html
 - 短い転送URL: https://tws19820925.github.io/KOMASimulator/privacy.html
 - 公開手順と申請時の確認観点: `docs/google_play_privacy_handoff_2026-04-30.md`
+- 初期公開のローンチノート: `docs/launch_notes_2026-04-30.md`
