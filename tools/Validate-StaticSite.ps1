@@ -50,6 +50,7 @@ $PolicyRequiredText = @(
     'id="policy-3"',
     'id="policy-4"',
     'id="policy-5"',
+    'id="faq"',
     "drifix.fishingseatadvisor@gmail.com",
     "skip-link"
 )
