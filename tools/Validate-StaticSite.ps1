@@ -51,6 +51,8 @@ $PolicyRequiredText = @(
     'id="policy-4"',
     'id="policy-5"',
     'id="faq"',
+    'application/ld+json',
+    '"@type": "SoftwareApplication"',
     "drifix.fishingseatadvisor@gmail.com",
     "skip-link"
 )
