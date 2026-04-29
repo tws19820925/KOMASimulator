@@ -47,6 +47,7 @@ $PolicyPath = Join-Path $Root "privacy_policy.html"
 $Policy = Get-Content -LiteralPath $PolicyPath -Encoding UTF8 -Raw
 $PolicyRequiredText = @(
     "KomaSim",
+    "Content-Security-Policy",
     'id="policy-3"',
     'id="policy-4"',
     'id="policy-5"',
