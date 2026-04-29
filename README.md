@@ -2,12 +2,16 @@
 
 KomaSimの公開ページです。`privacy_policy.html` はGoogle Playなどに登録するプライバシーポリシーURLとして使えるよう、アプリ紹介、画面イメージ、プライバシーポリシーを1ページにまとめています。
 
+公開URL: https://tws19820925.github.io/KOMASimulator/privacy_policy.html
+
 ## Files
 
 - `index.html`: ルートURLから `privacy_policy.html` へ案内する入口
 - `privacy_policy.html`: アプリ紹介ページ兼プライバシーポリシー本体
 - `assets/promo/`: ヒーロー画像とアプリアイコン
 - `assets/screenshots/`: Web掲載用のアプリ画面
+- `robots.txt`, `sitemap.xml`: GitHub Pages公開向けのクロール補助
+- `site.webmanifest`: Android端末などでホーム画面追加したときの表示情報
 
 ## Notes
 

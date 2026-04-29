@@ -1,0 +1,19 @@
+{
+  "name": "KomaSim",
+  "short_name": "KomaSim",
+  "description": "ビシ釣りのコマセと付け餌の同調を考えるためのAndroidアプリ。",
+  "lang": "ja",
+  "start_url": "/KOMASimulator/privacy_policy.html",
+  "scope": "/KOMASimulator/",
+  "display": "standalone",
+  "background_color": "#eef7f8",
+  "theme_color": "#0b5267",
+  "icons": [
+    {
+      "src": "assets/promo/komasim-logo-mark.png",
+      "sizes": "768x768",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
