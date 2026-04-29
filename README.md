@@ -1,5 +1,7 @@
 # KomaSim Web Page
 
+[![Static Site Validation](https://github.com/tws19820925/KOMASimulator/actions/workflows/static-site.yml/badge.svg)](https://github.com/tws19820925/KOMASimulator/actions/workflows/static-site.yml)
+
 KomaSimの公開ページです。`privacy_policy.html` はGoogle Playなどに登録するプライバシーポリシーURLとして使えるよう、アプリ紹介、画面イメージ、プライバシーポリシーを1ページにまとめています。
 
 公開URL: https://tws19820925.github.io/KOMASimulator/privacy_policy.html
