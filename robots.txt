@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tws19820925.github.io/KOMASimulator/sitemap.xml
