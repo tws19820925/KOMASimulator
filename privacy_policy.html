@@ -379,6 +379,37 @@
             font-size: 15px;
         }
 
+        .faq-list {
+            display: grid;
+            gap: 12px;
+            max-width: 860px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 0 12px 28px rgba(9, 38, 58, 0.08);
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            padding: 16px 18px;
+            color: var(--ink);
+            font-weight: 800;
+            line-height: 1.5;
+        }
+
+        .faq-item p {
+            padding: 0 18px 18px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .faq-item[open] summary {
+            color: var(--ocean-2);
+        }
+
         .dark-band {
             background: var(--ocean);
             color: #ffffff;
@@ -524,6 +555,7 @@
             <a href="#features">特徴</a>
             <a href="#screens">画面</a>
             <a href="#usecases">使い方</a>
+            <a href="#faq">FAQ</a>
             <a href="#privacy">プライバシーポリシー</a>
         </nav>
     </div>
@@ -654,6 +686,34 @@
                     <h3>釣行後にログから振り返る</h3>
                     <p>港、船、船長指示、餌状態、ヒット傾向をまとめ、次回に試すことを残せます。</p>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt" id="faq" aria-labelledby="faq-title">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="section-kicker">FAQ</p>
+                <h2 id="faq-title">公開前に確認されやすいこと。</h2>
+                <p>アプリの性格、データの扱い、プライバシーポリシーURLについて、よくある確認事項をまとめています。</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>KomaSimは釣果を保証するアプリですか。</summary>
+                    <p>いいえ。KomaSimは潮流、棚、仕掛け条件、餌状態を整理するためのシミュレーターです。実際の釣果や安全を保証するものではなく、船長指示、海況、現場判断を優先してください。</p>
+                </details>
+                <details class="faq-item">
+                    <summary>入力したプリセットや釣果ログは外部送信されますか。</summary>
+                    <p>現在のKomaSimは、プリセット、釣果ログ、校正値をアプリが自動で外部送信する機能を持ちません。共有やバックアップをユーザーが選択した場合のみ、Androidの共有機能を通じて内容が渡されます。</p>
+                </details>
+                <details class="faq-item">
+                    <summary>プライバシーポリシーURLとしてどのページを使えばよいですか。</summary>
+                    <p>正式URLは https://tws19820925.github.io/KOMASimulator/privacy_policy.html です。短いURLとして /privacy.html も同じページへ転送します。</p>
+                </details>
+                <details class="faq-item">
+                    <summary>問い合わせ先はどこですか。</summary>
+                    <p>ページ下部に記載している Arcadia_Labs の連絡先メールアドレスまでお問い合わせください。</p>
+                </details>
             </div>
         </div>
     </section>
