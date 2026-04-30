@@ -11,13 +11,13 @@
     <meta property="og:description" content="コマセと付け餌の同調を見える化し、船上で次の一投を考えるためのシミュレーター。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tws19820925.github.io/KOMASimulator/privacy_policy.html">
-    <meta property="og:image" content="https://tws19820925.github.io/KOMASimulator/assets/promo/komasim-hero-background.png">
-    <meta property="og:image:width" content="1600">
-    <meta property="og:image:height" content="900">
-    <meta property="og:image:alt" content="KomaSimの海中ヒーロー画像。コマセと仕掛けの流れを想起させるビジュアル。">
+    <meta property="og:image" content="https://tws19820925.github.io/KOMASimulator/assets/promo/komasim-overview-1200x630.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KomaSimの全体イメージ。条件設定、実釣、ログ、設定の4画面を並べて表示。">
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://tws19820925.github.io/KOMASimulator/assets/promo/komasim-hero-background.png">
+    <meta name="twitter:image" content="https://tws19820925.github.io/KOMASimulator/assets/promo/komasim-overview-1200x630.png">
     <meta name="theme-color" content="#0b5267">
     <link rel="icon" href="assets/promo/komasim-logo-mark.png">
     <link rel="apple-touch-icon" href="assets/promo/komasim-logo-mark.png">
@@ -30,7 +30,7 @@
       "applicationCategory": "SportsApplication",
       "operatingSystem": "Android",
       "description": "ビシ釣りのコマセ、付け餌、仕掛けの沈下と横流れをシミュレーションし、次の一投を考えるためのAndroidアプリ。",
-      "image": "https://tws19820925.github.io/KOMASimulator/assets/promo/komasim-hero-background.png",
+      "image": "https://tws19820925.github.io/KOMASimulator/assets/promo/komasim-overview-1200x630.png",
       "url": "https://tws19820925.github.io/KOMASimulator/privacy_policy.html",
       "author": {
         "@type": "Organization",
@@ -184,7 +184,7 @@
             align-items: end;
             background:
                 linear-gradient(90deg, rgba(5, 24, 39, 0.88) 0%, rgba(5, 24, 39, 0.74) 43%, rgba(5, 24, 39, 0.30) 100%),
-                url("assets/promo/komasim-hero-background.png") center / cover no-repeat;
+                url("assets/promo/komasim-overview-1200x630.png") center / cover no-repeat;
             color: #ffffff;
         }
 
@@ -310,8 +310,22 @@
             font-size: 16px;
         }
 
+        .overview-panel {
+            margin-top: 28px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .overview-panel img {
+            width: 100%;
+        }
+
         .feature-grid,
-        .usecase-grid {
+        .usecase-grid,
+        .input-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 14px;
@@ -319,6 +333,7 @@
 
         .feature-card,
         .usecase-card,
+        .input-card,
         .screen-card,
         .policy-block {
             border: 1px solid var(--line);
@@ -328,7 +343,8 @@
         }
 
         .feature-card,
-        .usecase-card {
+        .usecase-card,
+        .input-card {
             padding: 18px;
         }
 
@@ -346,14 +362,17 @@
         }
 
         .feature-card h3,
-        .usecase-card h3 {
+        .usecase-card h3,
+        .input-card h3 {
             margin: 0 0 8px;
             font-size: 19px;
             line-height: 1.45;
         }
 
         .feature-card p,
-        .usecase-card p {
+        .usecase-card p,
+        .input-card p,
+        .input-card li {
             color: var(--muted);
             font-size: 15px;
         }
@@ -526,6 +545,7 @@
 
             .trust-inner,
             .feature-grid,
+            .input-grid,
             .usecase-grid {
                 grid-template-columns: 1fr;
             }
@@ -583,6 +603,7 @@
         <nav class="nav" aria-label="ページ内ナビゲーション">
             <a href="#features">特徴</a>
             <a href="#screens">画面</a>
+            <a href="#inputs">操作入力</a>
             <a href="#usecases">使い方</a>
             <a href="#faq">FAQ</a>
             <a href="#privacy">プライバシーポリシー</a>
@@ -596,12 +617,13 @@
             <p class="eyebrow">ビシ釣り・コマセワーク判断支援アプリ</p>
             <h1 id="hero-title">KomaSim</h1>
             <p class="hero-lead">
-                コマセ、付け餌、仕掛けの沈下と横流れをシミュレーションし、棚到達の待ち時間、同調スコア、次の一投で確認するポイントを船上で読みやすく整理します。
+                条件設定、実釣、釣果ログ、設定を切り替えながら、コマセ、付け餌、仕掛けの沈下と横流れを船上で読みやすく整理します。
             </p>
             <div class="hero-actions">
                 <a class="button primary" href="#privacy">プライバシーポリシー</a>
                 <a class="button secondary" href="#features">機能を見る</a>
                 <a class="button secondary" href="#screens">画面を見る</a>
+                <a class="button secondary" href="#inputs">入力項目を見る</a>
             </div>
         </div>
     </section>
@@ -620,6 +642,19 @@
                 <strong>共有はユーザー操作</strong>
                 <span>結果共有やバックアップ共有は、ユーザーが選んだ時だけ行います。</span>
             </div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="overview-title">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="section-kicker">Overview</p>
+                <h2 id="overview-title">4つの画面で、次の一投を整える。</h2>
+                <p>条件設定、実釣、ログ、設定を下部ナビで切り替えます。最新UIでは実釣/入力タブのカードが重ならず、船上で必要な判断材料を順に確認できます。</p>
+            </div>
+            <figure class="overview-panel">
+                <img src="assets/promo/komasim-overview-1200x630.png" width="1200" height="630" alt="KomaSimの全体イメージ。条件設定、実釣、ログ、設定の4画面を並べて表示。">
+            </figure>
         </div>
     </section>
 
@@ -669,27 +704,111 @@
         <div class="wrap">
             <div class="section-head">
                 <p class="section-kicker">Screens</p>
-                <h2 id="screens-title">船上で見る画面と、仕掛けを整える画面。</h2>
-                <p>実釣タブでは次アクションとタイマーを優先し、入力タブでは棚・潮・針・校正値を整理して扱います。</p>
+                <h2 id="screens-title">画面ごとの役割を、操作単位で確認。</h2>
+                <p>DRIFIXと同じ粒度で、KomaSimの主要UIを「何を見る画面か」「何を入力・判断するか」に分けて説明します。</p>
             </div>
             <div class="screens-grid">
                 <article class="screen-card">
                     <figure>
-                        <img src="assets/screenshots/field-overview-360dp.png" width="720" height="1280" loading="lazy" alt="KomaSimの実釣画面。操作サマリーとシミュレーション結果が表示されている。">
+                        <img src="assets/screenshots/input-overview-360dp.png" width="720" height="1280" alt="KomaSimの条件設定画面。出船前チェック、ステップ表示、入力条件カードが表示されている。">
                     </figure>
                     <div class="screen-copy">
-                        <h3>実釣タブ</h3>
-                        <p>次の一手、棚、警告、タイマー、クイックログを船上で読みやすい順番に配置しています。</p>
+                        <h3>条件設定</h3>
+                        <p>釣法、棚、船宿ルール、潮流、針、餌、ハリス、現場校正値をまとめて入力します。基本条件を先に出し、詳細条件は必要なときに展開します。</p>
                     </div>
                 </article>
                 <article class="screen-card">
                     <figure>
-                        <img src="assets/screenshots/input-overview-360dp.png" width="720" height="1280" loading="lazy" alt="KomaSimの入力画面。釣法、棚、潮流、プリセット保存が表示されている。">
+                        <img src="assets/screenshots/field-overview-360dp.png" width="720" height="1280" alt="KomaSimの実釣画面。入力未確認の仮結果、今やることカード、次の一手が表示されている。">
                     </figure>
                     <div class="screen-copy">
-                        <h3>入力タブ</h3>
-                        <p>釣法、棚、潮流、針、餌、校正値を設定し、よく使う条件をプリセットとして残せます。</p>
+                        <h3>実釣</h3>
+                        <p>同調スコア、待ち時間、実釣レンジ、次の一手、注意点を確認します。入力未確認時は仮結果として表示し、条件確認へ戻る導線を出します。</p>
                     </div>
+                </article>
+                <article class="screen-card">
+                    <figure>
+                        <img src="assets/screenshots/logs-overview-360dp.png" width="720" height="1280" alt="KomaSimの釣果ログ画面。保存件数と空状態、次アクションが表示されている。">
+                    </figure>
+                    <div class="screen-copy">
+                        <h3>釣果ログ</h3>
+                        <p>当たり有無、餌残り、港/船、投入後時刻、メモを保存し、次回の条件比較に使います。ログがない状態でも次アクションを表示します。</p>
+                    </div>
+                </article>
+                <article class="screen-card">
+                    <figure>
+                        <img src="assets/screenshots/settings-overview-360dp.png" width="720" height="1280" alt="KomaSimの設定画面。アプリ情報、保存データとプライバシー、船宿ルール確認が表示されている。">
+                    </figure>
+                    <div class="screen-copy">
+                        <h3>設定</h3>
+                        <p>アプリバージョン、端末内保存、船上前チェック、バックアップ、校正値管理を確認します。クラウドへ自動送信しない前提もここで確認できます。</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt" id="inputs" aria-labelledby="inputs-title">
+        <div class="wrap">
+            <div class="section-head">
+                <p class="section-kicker">Operation Inputs</p>
+                <h2 id="inputs-title">操作入力は、船上で触る頻度に合わせて整理。</h2>
+                <p>条件設定は単なるフォームではなく、基本条件、潮流と仕掛け、現場校正、出船前チェック、プリセット、実釣ログ入力に分けています。</p>
+            </div>
+            <div class="input-grid">
+                <article class="input-card">
+                    <h3>基本条件</h3>
+                    <p>最初に釣法と棚の意味を揃えます。</p>
+                    <ul>
+                        <li>コマセマダイ / コマセキハダ・マグロ</li>
+                        <li>ビシ位置、最終棚、落とし込み幅</li>
+                        <li>船長指示をビシ位置として読むか、付け餌位置として読むか</li>
+                    </ul>
+                </article>
+                <article class="input-card">
+                    <h3>潮流と仕掛け</h3>
+                    <p>実釣中に変わりやすい条件を素早く調整します。</p>
+                    <ul>
+                        <li>弱い / 普通 / 速いの潮流プリセット</li>
+                        <li>必要時の潮流数値調整</li>
+                        <li>ハリス長、ハリス太さ、針製品、号数、刺し餌サイズ</li>
+                    </ul>
+                </article>
+                <article class="input-card">
+                    <h3>現場校正</h3>
+                    <p>釣り場で得た実測や感触を次の計算に反映します。</p>
+                    <ul>
+                        <li>針自重、餌重量、コマセ沈降速度</li>
+                        <li>校正値の保存、リセット、個別管理</li>
+                        <li>未校正時の仮結果表示と注意喚起</li>
+                    </ul>
+                </article>
+                <article class="input-card">
+                    <h3>出船前チェック</h3>
+                    <p>船宿ルールや船長指示を優先するための確認欄です。</p>
+                    <ul>
+                        <li>指示棚の意味確認</li>
+                        <li>最大落とし込み、投入開始棚、禁止事項</li>
+                        <li>KomaSim提案より現場指示を優先する前提</li>
+                    </ul>
+                </article>
+                <article class="input-card">
+                    <h3>プリセット</h3>
+                    <p>よく使う条件を保存し、読み込み前に差分を確認できます。</p>
+                    <ul>
+                        <li>現在条件との差分表示</li>
+                        <li>プリセット同士の比較</li>
+                        <li>複製、削除、検索、並び替え</li>
+                    </ul>
+                </article>
+                <article class="input-card">
+                    <h3>実釣ログ入力</h3>
+                    <p>一投ごとの結果を次回の条件比較へつなげます。</p>
+                    <ul>
+                        <li>当たりあり / なし</li>
+                        <li>餌残り、空針、かじられ、取られない</li>
+                        <li>港、船、船長指示、次回メモ、投入後時刻</li>
+                    </ul>
                 </article>
             </div>
         </div>
