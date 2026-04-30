@@ -184,7 +184,8 @@
             align-items: end;
             background:
                 linear-gradient(90deg, rgba(5, 24, 39, 0.88) 0%, rgba(5, 24, 39, 0.74) 43%, rgba(5, 24, 39, 0.30) 100%),
-                url("assets/promo/komasim-overview-1200x630.png") center / cover no-repeat;
+                url("assets/promo/komasim-overview-1200x630.png") right center / 980px auto no-repeat,
+                url("assets/promo/komasim-hero-background.png") center / cover no-repeat;
             color: #ffffff;
         }
 
@@ -308,19 +309,6 @@
             margin-top: 12px;
             color: var(--muted);
             font-size: 16px;
-        }
-
-        .overview-panel {
-            margin-top: 28px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: #ffffff;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-        }
-
-        .overview-panel img {
-            width: 100%;
         }
 
         .feature-grid,
@@ -563,6 +551,10 @@
 
             .hero {
                 min-height: 74svh;
+                background:
+                    linear-gradient(180deg, rgba(5, 24, 39, 0.54) 0%, rgba(5, 24, 39, 0.86) 70%, rgba(5, 24, 39, 0.94) 100%),
+                    url("assets/promo/komasim-overview-1200x630.png") 62% 18% / 720px auto no-repeat,
+                    url("assets/promo/komasim-hero-background.png") center / cover no-repeat;
             }
 
             .hero-inner {
@@ -645,19 +637,6 @@
         </div>
     </section>
 
-    <section class="section" aria-labelledby="overview-title">
-        <div class="wrap">
-            <div class="section-head">
-                <p class="section-kicker">Overview</p>
-                <h2 id="overview-title">4つの画面で、次の一投を整える。</h2>
-                <p>条件設定、実釣、ログ、設定を下部ナビで切り替えます。最新UIでは実釣/入力タブのカードが重ならず、船上で必要な判断材料を順に確認できます。</p>
-            </div>
-            <figure class="overview-panel">
-                <img src="assets/promo/komasim-overview-1200x630.png" width="1200" height="630" alt="KomaSimの全体イメージ。条件設定、実釣、ログ、設定の4画面を並べて表示。">
-            </figure>
-        </div>
-    </section>
-
     <section class="section alt" id="features" aria-labelledby="features-title">
         <div class="wrap">
             <div class="section-head">
@@ -710,7 +689,7 @@
             <div class="screens-grid">
                 <article class="screen-card">
                     <figure>
-                        <img src="assets/screenshots/input-overview-360dp.png" width="720" height="1280" alt="KomaSimの条件設定画面。出船前チェック、ステップ表示、入力条件カードが表示されている。">
+                        <img src="assets/screenshots/input-overview.png" width="720" height="1280" alt="KomaSimの条件設定画面。出船前チェック、ステップ表示、入力条件カードが表示されている。">
                     </figure>
                     <div class="screen-copy">
                         <h3>条件設定</h3>
@@ -719,7 +698,7 @@
                 </article>
                 <article class="screen-card">
                     <figure>
-                        <img src="assets/screenshots/field-overview-360dp.png" width="720" height="1280" alt="KomaSimの実釣画面。入力未確認の仮結果、今やることカード、次の一手が表示されている。">
+                        <img src="assets/screenshots/field-overview.png" width="720" height="1280" alt="KomaSimの実釣画面。入力未確認の仮結果、今やることカード、次の一手が表示されている。">
                     </figure>
                     <div class="screen-copy">
                         <h3>実釣</h3>
@@ -728,7 +707,7 @@
                 </article>
                 <article class="screen-card">
                     <figure>
-                        <img src="assets/screenshots/logs-overview-360dp.png" width="720" height="1280" alt="KomaSimの釣果ログ画面。保存件数と空状態、次アクションが表示されている。">
+                        <img src="assets/screenshots/logs-overview.png" width="720" height="1280" alt="KomaSimの釣果ログ画面。保存件数と空状態、次アクションが表示されている。">
                     </figure>
                     <div class="screen-copy">
                         <h3>釣果ログ</h3>
@@ -737,7 +716,7 @@
                 </article>
                 <article class="screen-card">
                     <figure>
-                        <img src="assets/screenshots/settings-overview-360dp.png" width="720" height="1280" alt="KomaSimの設定画面。アプリ情報、保存データとプライバシー、船宿ルール確認が表示されている。">
+                        <img src="assets/screenshots/settings-overview.png" width="720" height="1280" alt="KomaSimの設定画面。アプリ情報、保存データとプライバシー、船宿ルール確認が表示されている。">
                     </figure>
                     <div class="screen-copy">
                         <h3>設定</h3>

@@ -35,8 +35,11 @@ $RequiredFiles = @(
     ".nojekyll",
     "assets/promo/komasim-hero-background.png",
     "assets/promo/komasim-logo-mark.png",
-    "assets/screenshots/field-overview-360dp.png",
-    "assets/screenshots/input-overview-360dp.png"
+    "assets/promo/komasim-overview-1200x630.png",
+    "assets/screenshots/field-overview.png",
+    "assets/screenshots/input-overview.png",
+    "assets/screenshots/logs-overview.png",
+    "assets/screenshots/settings-overview.png"
 )
 
 foreach ($File in $RequiredFiles) {
